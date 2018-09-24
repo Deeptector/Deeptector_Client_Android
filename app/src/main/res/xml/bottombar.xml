@@ -6,15 +6,15 @@
             />
         <tab
             id="@+id/tab_home"
-            icon="@drawable/home_icon"
+            icon="@drawable/home"
             title= "main" />
         <tab
             id="@+id/tab_list"
-            icon="@drawable/list_icon"
+            icon="@drawable/list1"
             title= "list" />
         <tab
             id="@+id/tab_mypage"
-            icon="@drawable/mypage_icon"
+            icon="@drawable/cctv"
             title= "cctv" />
     </tabs>
 </PreferenceScreen>

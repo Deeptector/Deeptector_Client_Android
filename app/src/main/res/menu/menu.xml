@@ -17,7 +17,7 @@
     <Item
         android:id="@+id/menu_cctv"
         android:enabled = "true"
-        android:icon="@drawable/player"
+        android:icon="@drawable/cctv"
         android:title="CCTV"
         />
 
