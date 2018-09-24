@@ -57,7 +57,7 @@ public class LoadingActivity extends FragmentActivity {
                 start_main_intent = new Intent(getBaseContext(), MainActivity.class);
                 checkPermission(Permission.permission);
             }
-        }, 1000);
+        }, 1300);
 
     }
 
