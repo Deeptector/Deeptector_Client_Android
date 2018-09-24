@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/main"
+        android:enabled="true"
+        android:icon="@drawable/home"
+        android:title="HOME" />
+    <item
+        android:id="@+id/list"
+        android:icon="@drawable/list1"
+        android:title="LIST" />
+    <item
+        android:id="@+id/cctv"
+        android:enabled="true"
+        android:icon="@drawable/player"
+        android:title="CCTV" />
+</menu>
