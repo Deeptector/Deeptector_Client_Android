@@ -54,7 +54,7 @@ public class Fragment_File extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        fragment_file_webview.loadUrl("http://113.198.84.70:3000/list");
+        fragment_file_webview.loadUrl("http://192.168.0.23:3000/list");
 
         file_folder_btn.setOnClickListener(new View.OnClickListener() {
             @Override

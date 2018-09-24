@@ -41,7 +41,7 @@ public class Fragment_Main extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        fragment_main_webview.loadUrl("http://113.198.84.70:3000");
+        fragment_main_webview.loadUrl("http://192.168.0.23:3000");
 
     }
 
