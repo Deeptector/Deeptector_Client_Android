@@ -10,7 +10,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.WindowManager;
@@ -19,7 +18,6 @@ import java.io.File;
 
 public class MainActivity extends AppCompatActivity {
 
-    private DrawerLayout drawerLayout;
     private TabLayout tabLayout;
     private ViewPager viewPager;
 
@@ -53,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
     // 뷰에 관련된 부분, 초기화
     private void init(){
-        drawerLayout = (DrawerLayout)findViewById(R.id.main_drawer_layout_id);
+
         tabLayout = (TabLayout)findViewById(R.id.main_tablayout_id);
         viewPager = (ViewPager)findViewById(R.id.main_viewPager_id);
 
