@@ -1,17 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:id="@+id/main"
-        android:enabled="true"
+    <Item
+        android:id="@+id/menu_main"
+        android:enabled = "true"
         android:icon="@drawable/home"
-        android:title="HOME" />
-    <item
-        android:id="@+id/list"
+        android:title="Home"
+        />
+
+    <Item
+        android:id="@+id/menu_list"
+        android:enabled = "true"
         android:icon="@drawable/list1"
-        android:title="LIST" />
-    <item
-        android:id="@+id/cctv"
-        android:enabled="true"
+        android:title="LIST"
+        />
+
+    <Item
+        android:id="@+id/menu_cctv"
+        android:enabled = "true"
         android:icon="@drawable/player"
-        android:title="CCTV" />
+        android:title="CCTV"
+        />
+
+
 </menu>

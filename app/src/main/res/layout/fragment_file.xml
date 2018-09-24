@@ -1,20 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:fab="http://schemas.android.com/apk/res-auto">
 
-    <com.example.baeksubuntu.deepstreaming.WebView_init
-        android:layout_height="match_parent"
+    <com.example.baeksubuntu.deepstreaming.Custom_WebView
         android:layout_width="match_parent"
-        android:id="@+id/fragment2_webview">
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_file_webview_id">
 
-    </com.example.baeksubuntu.deepstreaming.WebView_init>
+    </com.example.baeksubuntu.deepstreaming.Custom_WebView>
 
     <com.melnykov.fab.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/folder_btn2"
+        android:id="@+id/fragment_file_folder_btn_id"
         android:layout_gravity="bottom|right"
         android:layout_margin="16dp"
         android:src="@drawable/ic_folder_open_black_24dp"

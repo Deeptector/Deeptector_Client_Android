@@ -1,5 +1,5 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -22,7 +22,6 @@
             android:layout_weight="0.6"
             android:layout_gravity="center"
             app:srcCompat="@drawable/cctv"
-            android:id="@+id/fragment3_img_view"
             />
         <TextView
             android:layout_width="wrap_content"
@@ -34,7 +33,6 @@
             android:textStyle="bold"
             android:textSize="40dp"
             android:textAlignment="center"
-            android:id="@+id/fragment3_txt_view"
             />
 
     </LinearLayout>
@@ -46,13 +44,12 @@
         android:orientation="vertical"
         android:background="#333"
         android:layout_centerHorizontal="true"
-        android:id="@+id/fragment3_videoStreaming"
         >
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/fragment3_videoStream"
+            android:id="@+id/fragment_cctv_videoStream_id"
             android:padding="20dp"
             >
         </RelativeLayout>
@@ -80,30 +77,9 @@
                 android:layout_centerInParent="true"
                 android:adjustViewBounds="true"
                 app:srcCompat="@drawable/rec1"
-                android:id="@+id/fragment3_img_capButton"
                 />
 
-            <!--  <EditText
-                  android:layout_width="150dp"
-                  android:layout_height="60dp"
-                  android:hint="IP"
-                  android:text=""
-                  android:textColor="#ffffff"
-                  android:id="@+id/ip"/>
-
-              <EditText
-                  android:layout_width="150dp"
-                  android:layout_height="60dp"
-                  android:layout_below="@+id/ip"
-                  android:hint="port"
-                  android:text=""
-                  android:textColor="#ffffff"
-                  android:id="@+id/port"
-                  />-->
-
         </RelativeLayout>
-
-
 
     </LinearLayout>
 

@@ -9,15 +9,14 @@ import android.view.ViewGroup;
 import android.webkit.WebView;
 
 
-public class BlankFragment extends Fragment {
+public class Fragment_Main extends Fragment {
 
-    WebView fragment1_webview;
-    View view;
+    private WebView fragment_main_webview;
+    private View current_main_view;
 
-    public BlankFragment() {
+    public Fragment_Main() {
 
     }
-
 
 
     @Override
@@ -26,15 +25,15 @@ public class BlankFragment extends Fragment {
 
     }
 
-    // 생성자 다음으로 불리는 데이터 처리하는 곳
+    // 생성자 다음으로 불리는 데이터 처리하는곳
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        view = inflater.inflate(R.layout.fragment_blank, container, false);
-        fragment1_webview = (WebView_init)view.findViewById(R.id.fragment1_webview);
+        current_main_view = inflater.inflate(R.layout.fragment_main, container, false);
+        fragment_main_webview = (Custom_WebView)current_main_view.findViewById(R.id.fragment_main_webview_id);
 
-        return view;
+        return current_main_view;
     }
 
     // 최종적으로 액티비티에 붙여주는 곳
@@ -42,8 +41,7 @@ public class BlankFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        fragment1_webview.loadUrl("http://192.168.0.23:3000");
-        //fragment1_webview.loadUrl("http://113.198.81.58:80");
+        fragment_main_webview.loadUrl("http://113.198.84.70:3000");
 
     }
 
