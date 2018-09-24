@@ -39,7 +39,7 @@ public class Notification_Service extends Service {
     private Thread read_thread;
     private String read_in_data;
 
-    private static String ip ="113.198.84.70";
+    private static String ip ="192.168.0.6";
     private static int port = 3003;
 
     private static Socket socket;
@@ -55,7 +55,7 @@ public class Notification_Service extends Service {
     private Thread push_read_thread;
     private String push_read_in_data;
 
-    private static String push_ip = "113.198.84.70";
+    private static String push_ip = "192.168.0.6";
     private static int push_port = 3004;
 
     private static Socket push_socket;
