@@ -14,7 +14,6 @@ public class Custom_WebView extends WebView {
     public Custom_WebView(Context context, AttributeSet attrs) {
         super(context, attrs);
 
-
         this.getSettings().setJavaScriptEnabled(true);
         this.setWebViewClient(new WebViewClient());
         this.getSettings().setAppCachePath(context.getApplicationContext().getCacheDir().getAbsolutePath());

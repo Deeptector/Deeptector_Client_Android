@@ -7,11 +7,13 @@
     android:layout_gravity="center"
     >
 
+
     <VideoView
         android:layout_width="320dp"
         android:layout_height="240dp"
         android:id="@+id/rtsp_videoView_id"
         android:layout_gravity="center"
         />
+
 
 </FrameLayout>
