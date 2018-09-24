@@ -16,9 +16,8 @@ public class File_info_search {
     String[] display_projection = { MediaStore.Video.Media.DISPLAY_NAME };
     String[] id_projection =  { MediaStore.Video.VideoColumns._ID };
 
-    Cursor cursor;
-    int column_index;
-
+    private Cursor cursor;
+    private int column_index;
 
     public File_info_search(){
 
