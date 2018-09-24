@@ -1,7 +1,6 @@
 package com.example.baeksubuntu.deepstreaming;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
@@ -25,22 +24,8 @@ public class RtspPlayView extends SurfaceView implements SurfaceHolder.Callback 
         mHolder = getHolder();
         mHolder.addCallback(this);
 
-        Thread a = new Thread(){
-            @Override
-            public void run(){
-                try {
-                    // JNI에 있는 라이브러리를 통해서 작업
-                    mPlayerNdkAdapter = new NDKAdapter(getContext());
-                    mPlayerNdkAdapter.setDataSource(lib_uri);
-
-                }catch (Exception e){
-                    Log.e("NoError", "");
-                    return;
-                }
-            }
-        };
-
-        a.start();
+        mPlayerNdkAdapter = new NDKAdapter(getContext());
+        mPlayerNdkAdapter.setDataSource(lib_uri);
     }
 
     /*
