@@ -63,3 +63,10 @@
 
 <br/><br/>
 ## 링크
+* [Deeptector](https://github.com/Deeptector/Deeptector)
+
+* [Deeptector_React](https://github.com/Deeptector/Deeptector_React)
+
+* [Deeptector_Spring]
+
+* [DarkNet](https://github.com/Deeptector/Darknet)
