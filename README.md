@@ -10,7 +10,8 @@ Deeptector_Android_Client는 실시간 행동 탐지기(딥 러닝)을 이용한
 본 프로젝트는 크게 4가지로 나뉘어 있습니다.  
 * Rtsp_Server
 * Spring_Server
-* React   
+* React  
+
 과 현재 이 Android_Client 부분입니다.
 
 
