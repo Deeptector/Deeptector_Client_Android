@@ -12,7 +12,7 @@
 * Spring_Server
 * React  
 
-해당 탐지기에 특정 행동이나 상황이 감지 되면 어플리케이션을 통해 알람(notification)을 실시간으로 확인 할 수 있습니다.   
+해당 탐지기에 특정 행동이나 상황이 감지 되면 어플리케이션을 통해 알림(notification)을 실시간으로 확인 할 수 있습니다.   
 또한 감지와 동시에 이루어지는 영상을 실시간으로 지켜 볼 수 있으며, 지난 영상들을 서버를 통해 다운받아 다시 확인 해보실수 있습니다.     
   
 웹 형태로 제공되는 클라이언트는 [**Deeptector_React**](https://github.com/Deeptector/Deeptector_React)를 참고 해주시면 되겠습니다.   
