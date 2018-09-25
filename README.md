@@ -17,7 +17,7 @@
   
 웹 형태로 제공되는 클라이언트는 [**Deeptector_React**](https://github.com/Deeptector/Deeptector_React)를 참고 해주시면 되겠습니다.   
     
-현재 이 Repository는 안드로이드  부분입니다.  
+현재 이 Repository는 **안드로이드 클라이언트** 부분입니다.  
 
     
 ## 사용법
