@@ -36,5 +36,8 @@ Deeptector_Android_Client는 실시간 행동 탐지기(딥 러닝)을 이용한
 권한이 확인 된 후에는 우측의 화면과 같은 홈화면을 만나실 수 있습니다.
 
 
-### 2. 지난 영상 리스트 및 다운로드
+### 2. 지난 영상 확인 및 다운로드
+<div>
+  <img width="200" src="https://user-images.githubusercontent.com/30898520/46005889-3abe4700-c0f1-11e8-97f9-d843bd1e6a94.png">  
+</div>
 
