@@ -58,6 +58,10 @@
    
 <br/><br/>
 ### 4. 알림 (Notification)
+<div>
+   <img width="200" src="https://user-images.githubusercontent.com/30898520/46010596-3cdad280-c0fe-11e8-9f78-6a38f9355b67.jpg">
+   <img width="200" src="https://user-images.githubusercontent.com/30898520/46010597-3f3d2c80-c0fe-11e8-8546-4500e87d2a4f.jpg">
+</div>
 
 * 감지
 	* 특정 행동이 감지되었을 시, 알림 메세지와 알림소리를 통하여 사용자에게 알려줍니다.
