@@ -6,11 +6,11 @@
 
 </div>
 
-Deeptector_Android_Client는 실시간 행동 탐지기(딥 러닝)을 이용한 행동 감지 시스템 딥 러닝의 어플리케이션입니다.
+Deeptector_Android_Client는 실시간 행동 탐지기(딥 러닝)을 이용한 행동 감지 시스템 딥 러닝의 어플리케이션입니다.    
 본 프로젝트는 크게
 * Rtsp_Server
 * Spring_Server
-* React
+* React   
 로 나뉘어있습니다.
 
 
