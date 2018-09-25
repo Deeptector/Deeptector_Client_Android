@@ -37,11 +37,12 @@
 
 ### 2. 지난 영상 확인 및 다운로드
 <div>
-  <img width="200" src="https://user-images.githubusercontent.com/30898520/46005889-3abe4700-c0f1-11e8-97f9-d843bd1e6a94.png">  
+  <img width="200" src="https://user-images.githubusercontent.com/30898520/46005889-3abe4700-c0f1-11e8-97f9-d843bd1e6a94.png">
+  <img width="200" src="https://user-images.githubusercontent.com/30898520/46006570-cedcde00-c0f2-11e8-80ef-4ac09cdcc73e.jpg">
 </div>
 
 #### 사용자는 서버에 녹화 저장된 동영상 목록들을 현재 이 화면에서 확인해보실수 있습니다.   
-첫번째로, 목록들 이름 옆에 표시된 폴더 모양을 클릭하시면 영상을 다운받으 실 수 있습니다.  
-두번째로, 파란색원 버튼을 클릭 하셔서 다운받은 영상들을 확인하여 재생하실 수 있습니다.  
+첫번째, 목록들 이름 옆에 표시된 폴더 모양을 클릭하시면 영상을 다운받으 실 수 있습니다.  
+두번째, 파란색원 버튼을 클릭 하셔서 다운받은 영상들을 확인하여 재생하실 수 있습니다.  
 
 
