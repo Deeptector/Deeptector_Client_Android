@@ -24,4 +24,7 @@ Deeptector_Android_Client는 실시간 행동 탐지기(딥 러닝)을 이용한
 
 ## 사용법
 
-
+### 1. 권한
+![2](https://user-images.githubusercontent.com/30898520/46005628-a6ec7b00-c0f0-11e8-897e-8e2a45037760.jpg)
+먼저, Deeptector_Android_Client 최초 실행 시 외부저장소에 대한 권한 요청을 하게됩니다.   
+이 권한을 허가 해주셔야 사용하실 수 있으시며, 이 권한은 후에 감지된 영상을 저장 및 열람 할 수 있게 해주는 권한이므로 안심하셔도 됩니다.
