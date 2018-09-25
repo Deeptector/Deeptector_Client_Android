@@ -25,6 +25,9 @@ public class Fragment_File extends Fragment {
     private Intent video_play_intent;
     private View current_file_view;
 
+    private Uri directory_uri;
+    private Intent directory_intent;
+
 
     public Fragment_File() {
 
@@ -61,12 +64,12 @@ public class Fragment_File extends Fragment {
             public void onClick(View view) {
 
                 // 비디오 타입형태로 폴더(파일)를 여는 곳
-                Uri uri = Uri.parse("content://media/external/images/media");
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                intent.setAction(Intent.ACTION_GET_CONTENT);
-                intent.setType("video/*");
+                directory_uri = Uri.parse("content://media/external/images/media");
+                directory_intent = new Intent(Intent.ACTION_VIEW, directory_uri);
+                directory_intent.setAction(Intent.ACTION_GET_CONTENT);
+                directory_intent.setType("video/*");
 
-                startActivityForResult(intent, 1);
+                startActivityForResult(directory_intent, 1);
 
             }
         });
