@@ -62,11 +62,11 @@
 	* 원하는 영상이 다운로드가 완료되었을 시, 사용자에게 알려줍니다.
 
 <br/><br/>
-## 링크
+## 프로젝트 관련 링크
 * [Deeptector](https://github.com/Deeptector/Deeptector)
 
 * [Deeptector_React](https://github.com/Deeptector/Deeptector_React)
 
-* [Deeptector_Spring]
+* ~~Deeptector_Spring~~
 
 * [DarkNet](https://github.com/Deeptector/Darknet)
