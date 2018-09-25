@@ -21,7 +21,6 @@
     
 ## 사용법
    
-<br/><br/>
 ### 1. 권한
 <div>
   <img width="200" src="https://user-images.githubusercontent.com/30898520/46005628-a6ec7b00-c0f0-11e8-897e-8e2a45037760.jpg">  
@@ -62,5 +61,5 @@
 * 영상 다운
 	* 원하는 영상이 다운로드가 완료되었을 시, 사용자에게 알려줍니다.
 
-
+<br/><br/>
 ## 링크
