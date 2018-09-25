@@ -16,7 +16,7 @@
 또한 감지와 동시에 이루어지는 영상을 실시간으로 지켜 볼 수 있으며, 지난 영상들을 서버를 통해 다운받아 다시 확인 해보실수 있습니다.     
   
 현재 이 repository는 Android_Client 부분입니다.  
-웹 형태로 제공되는 클라이언트는 글 맨 아래 있는 **Deeptector_React** 링크를 참고 해주시면 되겠습니다.   
+웹 형태로 제공되는 클라이언트는 [**Deeptector_React**](https://github.com/Deeptector/Deeptector_React)를 참고 해주시면 되겠습니다.   
     
     
     
