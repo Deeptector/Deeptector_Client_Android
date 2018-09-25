@@ -104,7 +104,6 @@ public class Notification_Service extends Service {
         push_connectServer();
         Log.d("PushConnectServer", "실행");
 
-
     }
 
     @Override
@@ -184,7 +183,7 @@ public class Notification_Service extends Service {
 
                         // 서버로부터 push라는 값이 넘어오면 알림(노티피케이션)을 띄움
                         if (push_read_in_data.equals("push")) {
-                            push_notification.onPush("Fighting", "nowFighting");
+                            push_notification.onPush("Detection", "now Detecting !!");
                         }
 
                     } catch (Exception e) {
@@ -296,7 +295,7 @@ public class Notification_Service extends Service {
 
             // (다운로드가 끝나면) 노티피케이션을 통해 Push 알림 발송
             Push_Notification finish_down_alarm = new Push_Notification();
-            finish_down_alarm.onPush(file_name + " : Download OK", "Download at Deeptector Folder");
+            finish_down_alarm.onPush(file_name + " : Download OK", "Download to Deeptector Folder");
 
             dos.writeUTF("receiveOK");
             dos.flush();
@@ -335,8 +334,8 @@ public class Notification_Service extends Service {
             PendingIntent pendingIntent = PendingIntent.getActivity(Notification_Service.this, 0, send_push_intent, PendingIntent.FLAG_UPDATE_CURRENT);
 
             // 폭력 감지가 되었을 시 폭력 알림
-            if(Title.equals("Fighting")){
-                builder.setSmallIcon(R.drawable.cctv)
+            if(Title.equals("Detection")){
+                builder.setSmallIcon(R.drawable.logo)
                         .setTicker("HETT")
                         .setWhen(System.currentTimeMillis())
                         .setNumber(1)
@@ -352,7 +351,7 @@ public class Notification_Service extends Service {
 
             // 동영상(파일) 다운로드가 완료 됐을 시 알림
             else {
-                builder.setSmallIcon(R.drawable.cctv)
+                builder.setSmallIcon(R.drawable.logo)
                         .setTicker("HETT")
                         .setWhen(System.currentTimeMillis())
                         .setNumber(1)
