@@ -21,7 +21,7 @@
     
 ## 사용법
    
-<br/>
+<br/><br/>
 ### 1. 권한
 <div>
   <img width="200" src="https://user-images.githubusercontent.com/30898520/46005628-a6ec7b00-c0f0-11e8-897e-8e2a45037760.jpg">  
