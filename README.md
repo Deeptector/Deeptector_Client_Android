@@ -50,7 +50,7 @@
 ### 3. 실시간 영상 수신
 <div>
    <img width="200" src="https://user-images.githubusercontent.com/30898520/46006795-51fe3400-c0f3-11e8-9736-7a1b86038b64.png">
-   <img width="200" src="https://user-images.githubusercontent.com/30898520/46009225-d5bb1f00-c0f9-11e8-8b1a-2ef9ece10a2c.png">
+   <img width="200" src="https://user-images.githubusercontent.com/30898520/46009264-fedbaf80-c0f9-11e8-97f7-561511c61795.png">
 </div>
 
 #### 사용자는 현재 촬영 되고있는 영상을 실시간으로 확인 해보실 수 있습니다.  
