@@ -22,4 +22,4 @@ Deeptector_Android_Client는 실시간 행동 탐지기(딥 러닝)을 이용한
 
 ===
 
-## 
+##
