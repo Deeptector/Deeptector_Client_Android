@@ -74,6 +74,6 @@
 
 * [Deeptector_React](https://github.com/Deeptector/Deeptector_React)
 
-* [Deeptector_Spring](https://github.com/Deeptector/Deeptector_Client_Android/blob/master/build.gradle)
+* ~~Deeptector_Spring~~
 
 * [DarkNet](https://github.com/Deeptector/Darknet)
