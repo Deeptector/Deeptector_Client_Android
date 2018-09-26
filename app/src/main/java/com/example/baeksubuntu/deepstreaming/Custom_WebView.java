@@ -30,7 +30,6 @@ public class Custom_WebView extends WebView {
             public void onDownloadStart(String url, String userAgent, String contentDisposition, String mimetype, long contentLength) {
 
                 String get_st = JavaScriptInterface.getBase64StringFromBlobUrl(url);
-
                 loadUrl(JavaScriptInterface.getBase64StringFromBlobUrl(url));
 
             }
