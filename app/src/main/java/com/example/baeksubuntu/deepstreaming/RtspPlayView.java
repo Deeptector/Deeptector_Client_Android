@@ -10,8 +10,7 @@ import android.view.SurfaceView;
 
 public class RtspPlayView extends SurfaceView implements SurfaceHolder.Callback {
 
-    private static final String TAG = "RtspPlayView";
-    private SurfaceHolder mHolder;
+    private SurfaceHolder surface_Holder;
     private NDKAdapter mPlayerNdkAdapter;
 
     private String lib_uri;
@@ -21,16 +20,12 @@ public class RtspPlayView extends SurfaceView implements SurfaceHolder.Callback 
 
         this.lib_uri = uri;
 
-        mHolder = getHolder();
-        mHolder.addCallback(this);
+        surface_Holder = getHolder();
+        surface_Holder.addCallback(this);
 
         mPlayerNdkAdapter = new NDKAdapter(getContext());
         mPlayerNdkAdapter.setDataSource(lib_uri);
     }
-
-    /*
-        SurfaceHolder.Callback Implemention
-    */
 
 
 
@@ -40,7 +35,7 @@ public class RtspPlayView extends SurfaceView implements SurfaceHolder.Callback 
         new Thread(new Runnable() {
             @Override
             public void run() {
-                mPlayerNdkAdapter.play(mHolder.getSurface());
+                mPlayerNdkAdapter.play(surface_Holder.getSurface());
             }
         }).start();
     }
