@@ -77,3 +77,27 @@
 * ~~Deeptector_Spring~~
 
 * [DarkNet](https://github.com/Deeptector/Darknet)
+
+<br/><br/>
+## 빌드 실패시
+Edit configuration - Error : please select android sdk 가 뜬다면
+프로젝트 Gradle Scripts -> build.gradle에서 compileSdkVersion과 targetSdkVersion의 숫자를 바꿔주신 뒤    
+다시 원래 27로 고쳐주고 sync now를 해주시면 해결 됩니다.  
+혹은 build.gradle
+```sh
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+``` 
+에서 classpath에 있는 3.0.1버전을 귀하의 안드로이드 스튜디오에 맞게 고쳐주시면 됩니다.
