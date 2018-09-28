@@ -88,7 +88,7 @@ public class Fragment_File extends Fragment {
 
             Log.d("선택파일정보 : ", "실제경로 : " + file_getPath + "// 파일명 : " + file_getName + "// 아이디 : " + file_getUri_id);
 
-            video_play_intent = new Intent(getContext(), Rtsp_VideoView_Activity.class);
+            video_play_intent = new Intent(getContext(), VideoView_Activity.class);
             video_play_intent.putExtra("video", file_getName);
             startActivity(video_play_intent);
 

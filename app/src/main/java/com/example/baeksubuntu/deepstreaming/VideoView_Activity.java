@@ -9,10 +9,10 @@ import android.view.WindowManager;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
-public class Rtsp_VideoView_Activity extends AppCompatActivity {
+public class VideoView_Activity extends AppCompatActivity {
 
     Intent get_video_intent;
-    VideoView rtsp_videoView;
+    VideoView videoView;
     String video_fileName;
 
     @Override
@@ -25,14 +25,14 @@ public class Rtsp_VideoView_Activity extends AppCompatActivity {
         get_video_intent = getIntent();
         video_fileName = get_video_intent.getStringExtra("video");
 
-        rtsp_videoView = (VideoView)findViewById(R.id.rtsp_videoView_id);
+        videoView = (VideoView)findViewById(R.id.rtsp_videoView_id);
 
-        rtsp_videoView.setVideoPath(Environment.getExternalStorageDirectory().getAbsolutePath() + "/Deeptector/" + video_fileName);
+        videoView.setVideoPath(Environment.getExternalStorageDirectory().getAbsolutePath() + "/Deeptector/" + video_fileName);
 
         final MediaController mediaController = new MediaController(this);
-        rtsp_videoView.setMediaController(mediaController);         // 화면 하단아래 재생,일시정지 기능 등의 컨트롤러 기능을 붙임
+        videoView.setMediaController(mediaController);         // 화면 하단아래 재생,일시정지 기능 등의 컨트롤러 기능을 붙임
 
-        rtsp_videoView.start();                 // 영상 자동시작
+        videoView.start();                 // 영상 자동시작
 
     }
 }
