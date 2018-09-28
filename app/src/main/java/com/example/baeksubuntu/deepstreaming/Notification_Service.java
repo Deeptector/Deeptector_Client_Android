@@ -282,6 +282,7 @@ public class Notification_Service extends Service {
             File f = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/Deeptector", file_name);
             file_fos = new FileOutputStream(f);
 
+            // 파일 다운 -> 지정된 버퍼양 만큼 while문을 돌면서 파일에 씀
             while(loading_count < file_length){
                 recv_data_count = file_dis.read(buffer);
 
@@ -362,7 +363,7 @@ public class Notification_Service extends Service {
                 notificationManager.notify(2, builder.build()); // Notification send
             }
 
-
+            // 메세지 알림시 진동 추가 (1초)
             Vibrator vibrator = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
             vibrator.vibrate(1000);
         }

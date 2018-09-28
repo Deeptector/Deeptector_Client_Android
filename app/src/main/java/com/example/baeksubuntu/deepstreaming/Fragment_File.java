@@ -39,6 +39,7 @@ public class Fragment_File extends Fragment {
         file_info_search = new File_info_search();
     }
 
+    // file목록을 보는 화면을 해당되는 fragment를 뷰에 인플레이팅
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

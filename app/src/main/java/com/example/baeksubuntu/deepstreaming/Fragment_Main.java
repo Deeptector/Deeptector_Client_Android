@@ -26,6 +26,7 @@ public class Fragment_Main extends Fragment {
     }
 
     // 생성자 다음으로 불리는 데이터 처리하는곳
+    // main에 해당되는 fragment를 뷰에 인플레이팅
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

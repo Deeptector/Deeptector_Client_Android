@@ -63,6 +63,7 @@ public class Fragment_CCTV extends Fragment {
     }
 
 
+    // rtsp서버에 접근, rtsp에서받은 데이터를 가지고 해당 layout에서 볼 수 있게함
     public void rtsp_Playing(){
         rtspPlayView = new RtspPlayView(getContext().getApplicationContext(), "rtsp://192.168.0.19:8089/rtsp");
         fragment_cctv_Layout = current_cctv_view.findViewById(R.id.fragment_cctv_videoStream_id);
