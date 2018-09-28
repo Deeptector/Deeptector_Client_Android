@@ -74,7 +74,7 @@
 
 * [Deeptector_React](https://github.com/Deeptector/Deeptector_React)
 
-* ~~Deeptector_Spring~~
+* [Deeptector_Spring](https://github.com/Deeptector/Deeptector_Spring)
 
 * [DarkNet](https://github.com/Deeptector/Darknet)
 
