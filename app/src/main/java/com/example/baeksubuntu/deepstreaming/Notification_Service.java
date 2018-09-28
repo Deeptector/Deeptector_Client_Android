@@ -20,7 +20,6 @@ import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.util.Log;
 
-import java.io.BufferedInputStream;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.File;
@@ -36,19 +35,18 @@ import java.net.Socket;
 public class Notification_Service extends Service {
 
     // 파일 다운로드 관련
-    private Thread read_thread;
-    private String read_in_data;
+    private Thread file_read_thread;
+    private String file_read_in_data;
 
     private static String ip ="192.168.0.6";
     private static int port = 3003;
 
-    private static Socket socket;
-    private static DataInputStream dis;
-    private static BufferedInputStream bis;
-    private static InputStream is;
-    private static DataOutputStream dos;
-    private static OutputStream os;
-    private static FileOutputStream fos;
+    private static Socket file_socket;
+    private static DataInputStream file_dis;
+    private static InputStream file_is;
+    private static DataOutputStream file_dos;
+    private static OutputStream file_os;
+    private static FileOutputStream file_fos;
 
 
     // 폭력감지시 사용 되는 알림 관련
@@ -93,13 +91,13 @@ public class Notification_Service extends Service {
         // 서비스에서 가장 먼저 호출 됨(최초 1회만)
         super.onCreate();
 
-        read_in_data = "data_wait";
+        file_read_in_data = "data_wait";
         push_read_in_data = "push_data_wait";
 
         push_notification = new Push_Notification();
 
         // 서버 각 소켓에 접근
-        connectServer();
+        file_connectServer();
         Log.d("ConnectServer", "실행");
         push_connectServer();
         Log.d("PushConnectServer", "실행");
@@ -175,9 +173,9 @@ public class Notification_Service extends Service {
 
                     try {
                         push_read_in_data.trim();
-                        Log.d("push_readUTF", "before:"+read_in_data);
+                        Log.d("push_readUTF", "before:" + push_read_in_data);
                         push_read_in_data = push_dis.readUTF();
-                        Log.d("push_readUTF", "after:"+read_in_data);
+                        Log.d("push_readUTF", "after:" + push_read_in_data);
                         push_read_in_data.trim();
                         Log.d("push_readUTF_data: ", push_read_in_data.toString());
 
@@ -198,24 +196,24 @@ public class Notification_Service extends Service {
 
 
     // 파일 다운로드 관련 서버소켓, 스트림 초기화
-    protected void connectServer(){
+    protected void file_connectServer(){
         new Thread(){
             @Override
             public void run(){
 
                 try {
 
-                    socket = new Socket(ip, port);
+                    file_socket = new Socket(ip, port);
                     Log.e("socket", "socket OK!");
-                    is = socket.getInputStream();
-                    dis = new DataInputStream(is);
+                    file_is = file_socket.getInputStream();
+                    file_dis = new DataInputStream(file_is);
 
-                    os = socket.getOutputStream();
-                    dos = new DataOutputStream(os);
+                    file_os = file_socket.getOutputStream();
+                    file_dos = new DataOutputStream(file_os);
 
                     // 서버로부터 처음데이터 받는곳
-                    read_Data();
-                    read_thread.start();
+                    file_read_Data();
+                    file_read_thread.start();
 
                 }catch (Exception e){
                     e.printStackTrace();
@@ -227,23 +225,23 @@ public class Notification_Service extends Service {
     }
 
     // 서버로부터의 파일 다운로드 하는곳
-    protected void read_Data(){
-        read_thread = new Thread(){
+    protected void file_read_Data(){
+        file_read_thread = new Thread(){
             @Override
             public void run() {
                 Log.d("socket", "Wait");
 
                 while (true) {
                     try {
-                        read_in_data.trim();
+                        file_read_in_data.trim();
                         Log.d("readUTF", "before");
-                        read_in_data = dis.readUTF();
+                        file_read_in_data = file_dis.readUTF();
                         Log.d("readUTF", "after");
-                        read_in_data.trim();
+                        file_read_in_data.trim();
 
                         // 서버로부터 video라는 값이 넘어오면 소켓연결을 시도
-                        if (read_in_data.equals("video")) {
-                            if (socket.isConnected()) {
+                        if (file_read_in_data.equals("video")) {
+                            if (file_socket.isConnected()) {
 
                                 // 파일 다운로드 시작
                                 downloading_Data();
@@ -274,31 +272,31 @@ public class Notification_Service extends Service {
             Log.d("get_file", "ready");
 
             // 파일 길이를 읽어드림
-            int file_length = dis.readInt();
+            int file_length = file_dis.readInt();
             Log.d("get_file_length:", Integer.toString(file_length));
 
             // 파일 이름을 읽어드림
-            String file_name = dis.readUTF();
+            String file_name = file_dis.readUTF();
             Log.d("get_file_name:", file_name);
 
             File f = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/Deeptector", file_name);
-            fos = new FileOutputStream(f);
+            file_fos = new FileOutputStream(f);
 
             while(loading_count < file_length){
-                recv_data_count = dis.read(buffer);
+                recv_data_count = file_dis.read(buffer);
 
-                fos.write(buffer, 0, recv_data_count);
+                file_fos.write(buffer, 0, recv_data_count);
 
                 loading_count += recv_data_count;
             }
-            fos.flush();
+            file_fos.flush();
 
             // (다운로드가 끝나면) 노티피케이션을 통해 Push 알림 발송
             Push_Notification finish_down_alarm = new Push_Notification();
             finish_down_alarm.onPush(file_name + " : Download OK", "Download to Deeptector Folder");
 
-            dos.writeUTF("receiveOK");
-            dos.flush();
+            file_dos.writeUTF("receiveOK");
+            file_dos.flush();
 
         }catch (Exception e){
             Log.d("get_file_Server:", "Error");
@@ -307,8 +305,8 @@ public class Notification_Service extends Service {
         }
         finally {
             try{
-                fos.close();
-                fos = null;
+                file_fos.close();
+                file_fos = null;
             }catch (Exception e){
                 e.printStackTrace();
             }

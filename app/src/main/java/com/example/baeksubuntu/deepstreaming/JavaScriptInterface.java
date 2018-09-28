@@ -58,20 +58,5 @@ public class JavaScriptInterface {
         os.write(pdfAsBytes);
         os.flush();
 
-       /* if(dwldsPath.exists()) {
-            NotificationCompat.Builder b = new NotificationCompat.Builder(context, "MY_DL");
-            Log.e("notif", "good");
-            nm = (NotificationManager) this.context.getSystemService(Context.NOTIFICATION_SERVICE);
-            if(nm != null) {
-                nm.notify(notificationId, b.build());
-                Handler h = new Handler();
-                long delayInMilliseconds = 5000;
-                h.postDelayed(new Runnable() {
-                    public void run() {
-                        nm.cancel(notificationId);
-                    }
-                }, delayInMilliseconds);
-            }
-        }*/
     }
 }
