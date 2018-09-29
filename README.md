@@ -22,6 +22,14 @@
     
 ## 사용법
    
+### 0. Android-studio에서 실행 시 (NDK 설치)  
+##### apk파일이 아닌 Studio에서 실행시 NDK 툴을 설치해주셔야 합니다   
+Tools -> Android -> SDK Manager 로 들어가셔서 다음 화면과 같이 NDK 설치 여부를 확인해주십시오.
+<div>
+ <img width="200" height="200" src="https://user-images.githubusercontent.com/30898520/46242881-c6ddb080-c408-11e8-8d8c-50810e4b0774.png">
+</div>
+
+   
 ### 1. 권한
 <div>
   <img width="200" src="https://user-images.githubusercontent.com/30898520/46005628-a6ec7b00-c0f0-11e8-897e-8e2a45037760.jpg">  
