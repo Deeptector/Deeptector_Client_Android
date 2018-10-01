@@ -23,7 +23,7 @@
    
 ## 사용법
    
-### 0. Android-studio에서 실행 시 (NDK 설치)  
+### 0. Android-studio에서 실행 시 (NDK 설치필요)  
 ##### apk파일이 아닌 Studio에서 실행시 NDK 툴을 설치해주셔야 합니다   
 Tools -> Android -> SDK Manager 로 들어가셔서 다음 화면과 같이 NDK 설치 여부를 확인해주십시오.
 <div>
