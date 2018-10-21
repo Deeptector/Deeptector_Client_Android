@@ -504,7 +504,7 @@ necessary.  Here is a sample; alter the names:
 That's all there is to it!
 
 
-
+<br/>
 
 Mozilla Public License
 Version 2.0
