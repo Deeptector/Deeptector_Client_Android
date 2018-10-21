@@ -1,3 +1,4 @@
+### GNU LESSER GENERAL PUBLIC LICENSE
                   GNU LESSER GENERAL PUBLIC LICENSE
                        Version 2.1, February 1999
 
@@ -505,6 +506,7 @@ That's all there is to it!
 
 
 <br/>
+### Mozilla Public License
 
 Mozilla Public License
 Version 2.0
